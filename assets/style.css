@@ -10,10 +10,8 @@ body{
 .navbar {
     height: 100px;
     width: 100%;
-    background-color: #55A4AB;
-    border: 5px solid #BBF1F6;
-    padding: 20px;
-    word-spacing: 5px;
+    background-color: #646667;
+    padding: 20px 0px;
     display:flex;
     justify-content: space-between;
     color: white;
@@ -21,22 +19,66 @@ body{
  
 .navbar h1 {
 
-    font-family: Arial, Helvetica, sans-serif;
-    background-color:#36676B;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color:#1ba1c6;
+    color: #454748;
     padding: 5px 5px;
-    
+    margin: 0;
+    width: 300px;
+    text-align: right;
+    flex-wrap: wrap;
+   
 }
 
 .nav  {
+    flex-wrap: wrap;
     display:inline-flex;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: verdana, sans-serif;
     font-size: 30px;
     list-style: none;
+    word-spacing: 5px;
 }
 
 .nav a {
     flex-wrap: wrap;
-    text-decoration:none;
-    color: white;
-    padding: 10px 15px;
+    border-bottom:#1ba1c6 ;
+    color: #1ba1c6;
+    padding: 15px 15px;
+    text-underline-offset: 10px;
+    text-align:center;
+    
+}
+
+.header {
+    position: relative;
+    padding: 20px 20px;
+    border: 2px solid #1ba1c6;
+    background-image: url("images/seattle-rooftop.jpg");
+    background-size:cover;
+    background-position: center;
+    background-position-x: 10px;
+    background-position-y: -600px;
+    background-attachment: fixed;
+    background-repeat: none;
+    height: 400px;
+    flex-wrap: wrap;
+
+}
+
+.header h2{
+    position: absolute;
+    text-align: center;
+    font-family: helvetica, sans-serif;
+    font-size: 50px;
+    color: #1ba1c6;
+    background-color: #454748;
+    border: 1px;
+    border-radius: 10px;
+    padding: 5px 5px;
+    margin: 0;
+    float: right;
+    justify-content: flex-end;
+    bottom: 10px;
+    right: 50px;
+    
 }
