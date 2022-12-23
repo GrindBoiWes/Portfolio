@@ -10,7 +10,7 @@ body{
 .navbar {
     height: 100px;
     width: 100%;
-    background-color: #646667;
+    background-color: #454748;
     padding: 20px 0px;
     display:flex;
     justify-content: space-between;
@@ -58,7 +58,7 @@ body{
     background-position: center;
     background-position-x: 10px;
     background-position-y: -600px;
-    background-attachment: fixed;
+    background-attachment:fixed;
     background-repeat: none;
     height: 400px;
     flex-wrap: wrap;
@@ -66,6 +66,7 @@ body{
 }
 
 .header h2{
+    display:flex;
     position: absolute;
     text-align: center;
     font-family: helvetica, sans-serif;
@@ -81,4 +82,49 @@ body{
     bottom: 10px;
     right: 50px;
     
+}
+
+.about-grid {
+    display:flex;
+}
+
+.about-grid h2 {
+    position:relative;
+    color:azure;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    right: 1250px;
+    float:right;
+    flex: wrap;
+    
+}
+#pic {
+    height:25%;
+    width: 25%;
+    padding: 5px 10px;
+}
+
+#thumbnail {
+    background-size:cover;
+}
+
+
+
+.portfolio-grid {
+   display:flex; 
+   flex-wrap: wrap;
+   justify-content: space-between;
+   gap: 15px;
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 50px;
+}
+
+.portfolio-grid-item {
+    flex-grow:1;
+    background: #454748;
+    width: calc(50% -5px);
+    padding: 10px;
+}
+
+.hero-item{
+    width:100%;
 }
