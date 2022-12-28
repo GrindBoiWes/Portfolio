@@ -61,6 +61,7 @@ body{
     background-attachment:fixed;
     background-repeat: none;
     height: 400px;
+    display:flex;
     flex-wrap: wrap;
 
 }
@@ -78,7 +79,6 @@ body{
     padding: 5px 5px;
     margin: 0;
     float: right;
-    justify-content: flex-end;
     bottom: 10px;
     right: 50px;
     
@@ -86,25 +86,52 @@ body{
 
 .about-grid {
     display:flex;
+    flex-wrap: wrap;
+    width:100%;
+    height:100%;
+    
 }
 
 .about-grid h2 {
     position:relative;
     color:azure;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    right: 1250px;
-    float:right;
-    flex: wrap;
+    font-size: 50px;
+    display:inline-flex;
+    text-decoration: underline;
+    text-underline-position: right;
+    
+    
     
 }
-#pic {
-    height:25%;
-    width: 25%;
-    padding: 5px 10px;
+/*
+.vl {
+    border-left:6px solid #1ba1c6;
+    height:400px;
+    position:absolute;
+    left:35%;
+    margin-left: -3px;
+    top:525px;
+    display:flex;
+} */
+.content {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    color: white;
+    position:relative;
+    padding: 10px 10px;
+    text-align: justify;
+    display:inline-flex;
+    float:right;
+    justify-content: right;
+    width:50%;
+    height:100px;
 }
-
-#thumbnail {
-    background-size:cover;
+#pic {
+    display:flex;
+    height:300px;
+    width: 50%;
+    float:left;
 }
 
 
@@ -113,18 +140,120 @@ body{
    display:flex; 
    flex-wrap: wrap;
    justify-content: space-between;
-   gap: 15px;
-   font-family:Verdana, Geneva, Tahoma, sans-serif;
-   font-size: 50px;
+   gap: 5px;
+   width: 100%;
+   height:auto;
+     
 }
+
+
+.sidebar {
+
+    display: flex;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    position: relative;
+    float:left;
+}
+
 
 .portfolio-grid-item {
-    flex-grow:1;
-    background: #454748;
-    width: calc(50% -5px);
+    flex-grow:0;
+    border: 5px solid #454748;
+    width: calc(50% - 5px);
     padding: 10px;
+    
+   
+    
+}
+.hero-item {
+    width:100%;
+    object-fit: fill;
+    flex-wrap: wrap;
 }
 
-.hero-item{
+.portfolio-grid h3 {
+    display:flex;
+    position: relative;
+    text-align: center;
+    font-family: helvetica, sans-serif;
+    font-size: 25px;
+    color: #1ba1c6;
+    background-color: #454748;
+    border: 1px;
+    border-radius: 10px;
+    padding: 5px 5px;
+    margin: 0;
+    float: right;
+    bottom: 50px;
+    right: 10px;
+    
+}
+
+
+#thumbnail {
+    object-fit: cover; 
     width:100%;
+    height:100%; 
+    
+} 
+
+.footer {
+
+    height: 100px;
+    width: 100%;
+    background-color: #454748;
+    padding: 20px 0px;
+    display:flex;
+    justify-content: space-between;
+    color: white;
+    word-spacing: 10px;
+}
+
+
+.footer li {
+   
+    flex-wrap: wrap;
+    display:inline-flex;
+    font-family: verdana, sans-serif;
+    font-size: 15px;
+    list-style: none;
+    word-spacing: 10px;
+}
+@media screen and (max-width: 1200px){
+    .header{
+        background-image: url("images/Fall.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: none;
+        position:relative;
+        background-position-x: -500px ;
+        background-position-y: -1000px;
+        
+        } 
+        main, .navbar, .about-grid, .portfolio-grid
+
+        {
+          flex-direction: column;
+          padding: 2px 2px;
+        }
+      }
+    
+@media screen and (max-width: 768px) {
+    .header {
+        background-image: url("images/PurpleBackground.jpg");
+        background-size: cover;
+        flex-direction: column;
+        position:relative;
+        
+        
+    }
+ main, .navbar, .about-grid, .portfolio-grid, 
+ footer
+
+  {
+    flex-direction: column;
+    padding: 2px 2px;
+    
+  }
 }
