@@ -130,7 +130,7 @@ body{
 #pic {
     display:flex;
     height:300px;
-    width: 50%;
+    width: auto;
     float:left;
 }
 
@@ -140,9 +140,11 @@ body{
    display:flex; 
    flex-wrap: wrap;
    justify-content: space-between;
-   gap: 5px;
-   width: 100%;
+   width: 70%;
    height:auto;
+   padding: 10px 10px;
+   float:right;
+   gap:10px;
      
 }
 
@@ -151,9 +153,13 @@ body{
 
     display: flex;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:aliceblue;
     font-size: 50px;
-    position: relative;
+    position: absolute;
     float:left;
+    width:30%;
+    left:350px;
+
 }
 
 
@@ -161,18 +167,18 @@ body{
     flex-grow:0;
     border: 5px solid #454748;
     width: calc(50% - 5px);
-    padding: 10px;
-    
+    float:right;
    
     
 }
 .hero-item {
     width:100%;
-    object-fit: fill;
+    object-fit:cover;
     flex-wrap: wrap;
+    
 }
 
-.portfolio-grid h3 {
+.portfolio-grid-item h3 {
     display:flex;
     position: relative;
     text-align: center;
@@ -192,6 +198,8 @@ body{
 
 
 #thumbnail {
+    display:flex;
+    flex-wrap: flex;
     object-fit: cover; 
     width:100%;
     height:100%; 
@@ -231,7 +239,7 @@ body{
         background-position-y: -1000px;
         
         } 
-        main, .navbar, .about-grid, .portfolio-grid
+        main, .navbar, .nav, .about-grid, .portfolio-grid, .sidebar
 
         {
           flex-direction: column;
@@ -248,12 +256,10 @@ body{
         
         
     }
- main, .navbar, .about-grid, .portfolio-grid, 
- footer
-
-  {
+    main, .navbar, .nav, .about-grid, .portfolio-grid {
     flex-direction: column;
     padding: 2px 2px;
+    width:100%;
     
   }
 }
