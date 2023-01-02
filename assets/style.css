@@ -279,4 +279,10 @@ body{
     width:100%;
     height:auto;
   }
+  #thumbnail {
+    width:100%;
+    height:auto;
+    justify-content: center;
+    object-fit: cover;
+  }
 }
