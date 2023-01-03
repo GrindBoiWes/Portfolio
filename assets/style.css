@@ -96,10 +96,11 @@ body{
     position:relative;
     color:azure;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 50px;
+    font-size: 40px;
     display:inline-block;
     text-decoration: underline;
     text-underline-position: right;
+    
     
     
     
@@ -120,12 +121,13 @@ body{
     color: white;
     position:relative;
     padding: 10px 10px;
-    text-align: justify;
+    text-align: center;
     display:inline-flex;
     float:right;
-    justify-content: right;
+    justify-content:space-between;
     width:50%;
-    height:100px;
+
+    height:auto;
 }
 #pic {
     display:flex;
@@ -140,7 +142,7 @@ body{
    display:flex; 
    flex-wrap: wrap;
    justify-content: space-between;
-   width: 70%;
+   width: 65%;
    height:auto;
    padding: 10px 10px;
    float:right;
@@ -207,6 +209,15 @@ body{
     
 } 
 
+.blur img{
+    transition: 1s ease;
+    }
+    
+    .blur img:hover {
+    -webkit-filter: blur(5px);
+    transition: 1s ease;
+    }
+
 .footer {
 
     height: 100px;
@@ -225,11 +236,11 @@ body{
     flex-wrap: wrap;
     display:inline-flex;
     font-family: verdana, sans-serif;
-    font-size: 15px;
+    font-size: 25px;
     list-style: none;
     word-spacing: 10px;
 }
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1400px){
     .header{
         background-image: url("images/Fall.jpg");
         background-size: cover;
@@ -240,16 +251,31 @@ body{
         background-position-y: -1000px;
         
         } 
-        main, .navbar, .nav, .about-grid, .portfolio-grid, .sidebar
-
-        {
-          flex-direction: column;
-          padding: 2px 2px;
-          width:100%;
-         
-        }
+        .navbar, .nav, .about-grid,
+        .content, .portfolio-grid, .portfolio-grid-item, .sidebar, .footer {
+        flex-direction: column;
+        padding: 2px 2px;
+        width:100%;
+        height:auto;
+        display:flex;
+        float:none;
+        align-items: center;
+        
       }
-    
+      img {
+        width:100%;
+      }
+      #pic {
+        width:100%;
+        height:auto;
+      }
+      #thumbnail {
+        width:100%;
+        height:auto;
+        justify-content: center;
+        object-fit: cover;
+      }
+    }
 @media screen and (max-width: 768px) {
     .header {
         background-image: url("images/PurpleBackground.jpg");
