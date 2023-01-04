@@ -89,21 +89,39 @@ body{
     flex-wrap: wrap;
     width:100%;
     height:100%;
+    background-color: #454748;
+    border: 5px #1ba1c6;
+    
+   
+    
     
 }
 
-.about-grid h2 {
+.about-me {
     position:relative;
     color:azure;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 40px;
-    display:inline-block;
-    text-decoration: underline;
-    text-underline-position: right;
+    font-size: 20px;
+    display:inline-block; 
+    margin: 0;
+    background-image: url("./images/Portfolio-Pic.jpg");
+    background-position-x: -275px;
+    background-position-y: -175px;
+    height:400px;
+    width:700px;
+    object-fit:cover;
+
     
-    
-    
-    
+}
+.about-me h2 {
+    background-color:#1ba1c6;
+    color: #454748;
+    padding: 5px 5px;
+    margin: 0;
+    width:300px;
+    left:400px;
+    top: 0px;
+    position:relative;
 }
 /*
 .vl {
@@ -115,61 +133,73 @@ body{
     top:525px;
     display:flex;
 } */
-.content {
+.content  {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 25px;
+    font-size: 30px;
     color: white;
     position:relative;
     padding: 10px 10px;
     text-align: center;
     display:inline-flex;
-    float:right;
-    justify-content:space-between;
     width:50%;
-
-    height:auto;
+    overflow: wrap;
+    float:center;
+    border: 2px #1ba1c6;
+    
 }
-#pic {
+
+.main {
     display:flex;
-    height:300px;
-    width: auto;
-    float:left;
+    flex-wrap:wrap;
+    width:100%;
+    
 }
 
+.sidebar {
 
+    display:flex;
+    flex-wrap: wrap;
+    margin:0;
+    height:30px;
+    padding: 5px 5px;
+    
+}
+.sidebar h2 {
+    position:relative;
+    display: flex;
+    flex-wrap: wrap;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:aliceblue;
+    font-size: 40px;
+    background-color:#1ba1c6;
+    color: #454748;
+    padding: 5px 5px;
+    margin: 0;
+    text-align: right;
+    width:350px;
+    justify-content: right;
+}
 
 .portfolio-grid {
    display:flex; 
    flex-wrap: wrap;
    justify-content: space-between;
-   width: 65%;
-   height:auto;
    padding: 10px 10px;
+   width:75%;
+   position:relative;
    float:right;
-   gap:10px;
      
-}
-
-
-.sidebar {
-
-    display: flex;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color:aliceblue;
-    font-size: 50px;
-    position: absolute;
-    float:left;
-    width:30%;
-    left:350px;
-
 }
 
 
 .portfolio-grid-item {
     flex-grow:0;
-    border: 5px solid #454748;
+    border: 5px solid #1ba1c6;
     width: calc(50% - 5px);
     float:right;
+    gap:10px 10px;
+    position:relative;
+    
    
     
 }
@@ -227,10 +257,21 @@ body{
     display:flex;
     justify-content: space-between;
     color: white;
-    word-spacing: 10px;
+    word-spacing: 5px;
 }
 
+.footer h2 {
 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color:#1ba1c6;
+    color: #454748;
+    padding: 5px 5px;
+    margin: 0;
+    width: 400px;
+    text-align: right;
+    flex-wrap: wrap;
+   
+}
 .footer li {
    
     flex-wrap: wrap;
@@ -239,7 +280,11 @@ body{
     font-size: 25px;
     list-style: none;
     word-spacing: 10px;
+    align-items: center;
+    
 }
+
+
 @media screen and (max-width: 1400px){
     .header{
         background-image: url("images/Fall.jpg");
@@ -252,7 +297,7 @@ body{
         
         } 
         .navbar, .nav, .about-grid,
-        .content, .portfolio-grid, .portfolio-grid-item, .sidebar, .footer {
+         .portfolio-grid, .portfolio-grid-item, .sidebar, .footer {
         flex-direction: column;
         padding: 2px 2px;
         width:100%;
@@ -261,6 +306,10 @@ body{
         float:none;
         align-items: center;
         
+      }
+      .content{
+        width:100%;
+        justify-content: center;
       }
       img {
         width:100%;
@@ -288,7 +337,7 @@ body{
         
     }
     .navbar, .nav, .about-grid,
-    .content, .portfolio-grid, .portfolio-grid-item, .sidebar, .footer {
+    .main .portfolio-grid, .portfolio-grid-item, .sidebar, .footer {
     flex-direction: column;
     padding: 2px 2px;
     width:100%;
@@ -298,17 +347,43 @@ body{
     align-items: center;
     
   }
+  .nav li{
+    margin: 5px;
+  }
+  .about-me h2{
+    float:center;
+  }
+  h2{
+    float:center;
+    
+  }
+  p{
+    width:100%;
+    font-size:25px;
+    justify-content: center;
+    
+  }
+  .sidebar {
+    width:600px;
+  }
+  .main {
+    width:100%;
+    height:auto;
+    justify-content: center;
+  }
+  .portfolio-grid {
+    width:100%;
+    height:auto;
+    justify-content: center;
+  }
   img {
     width:100%;
+    justify-content: center;
+    object-fit: cover;
   }
   #pic {
     width:100%;
     height:auto;
   }
-  #thumbnail {
-    width:100%;
-    height:auto;
-    justify-content: center;
-    object-fit: cover;
-  }
+ 
 }
