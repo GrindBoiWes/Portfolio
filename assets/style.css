@@ -111,10 +111,7 @@ body{
     width:700px;
     object-fit:cover;
     text-align: right;
-    border-radius: 
-
-    
-}
+    }
 .about-me h2 {
     background-color:#1ba1c6;
     color: #454748;
@@ -383,7 +380,7 @@ body{
   }
   p{
     width:100%;
-    font-size:25px;
+    font-size:20px;
     justify-content: center;
     
   }
@@ -406,11 +403,11 @@ body{
     object-fit: cover;
   }
  
- .footer h2 {
+  .footer h2 {
     text-align: center;
-    width:380px;
+    width:280px;
  }
  .footer li {
-  font-size: 10px;
+  font-size: 15px;
  }
 }
