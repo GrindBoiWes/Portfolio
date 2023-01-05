@@ -351,7 +351,7 @@ body{
       text-align: center;
       font-size:20px;
     }
-    .navbar, .nav, 
+     .navbar, .nav, 
     .main .portfolio-grid, .portfolio-grid-item, .sidebar, .footer {
     flex-direction: column;
     padding: 2px 2px;
@@ -360,8 +360,13 @@ body{
     align-items: center;
     text-underline-offset: 0px;
   }
+ 
   .nav li{
     margin: 5px;
+  }
+  .header h2 {
+    font-size:20px;
+    align-items: center;
   }
   .about-grid {
     width:390px;
