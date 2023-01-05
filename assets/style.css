@@ -120,9 +120,7 @@ body{
     color: #454748;
     padding: 5px 5px;
     margin: 0;
-    width:300px;
-    left:-122px;
-    top: 0px;
+    width:120px;
     position:relative;
 }
 /*
@@ -307,6 +305,11 @@ body{
         align-items: center;
         text-underline-offset: 0px;
       }
+      .about-me h2{
+        float:center;
+        text-align: center;
+        
+      }
       .about-grid {
         justify-content: center;
         text-align: center;
@@ -367,8 +370,7 @@ body{
   .about-me h2{
     float:center;
     text-align: center;
-    left:200px;
-    top:350px;
+    
   }
   h2{
     float:center;
