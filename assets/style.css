@@ -381,7 +381,7 @@ body{
     
   }
   .sidebar h2{
-    width:380px;
+    width:300px;
   }
   .main {
     width:100%;
@@ -398,10 +398,7 @@ body{
     justify-content: center;
     object-fit: cover;
   }
-  #pic {
-    width:100%;
-    height:auto;
-  }
+ 
  .footer h2 {
     text-align: center;
     width:380px;
