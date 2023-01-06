@@ -318,7 +318,7 @@ body{
     }
     }
     /* These are all of the values set for about the size of an iphone */
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 460px) {
     .header {
         background-image: url("images/PurpleBackground.jpg");
         background-size: cover;
