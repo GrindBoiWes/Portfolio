@@ -7,6 +7,7 @@ body{
     margin: 0;
     background-color:black;
 }
+/* Main nav bar with features links to pages featuring previous work */
 .navbar {
     height: 100px;
     width: 100%;
@@ -27,7 +28,6 @@ body{
     width: 300px;
     text-align: right;
     flex-wrap: wrap;
-   
 }
 
 .nav  {
@@ -48,7 +48,7 @@ body{
     text-align:center;
     
 }
-
+/* Header section featuring multiple images when downsizing window */
 .header {
     position: relative;
     padding: 20px 20px;
@@ -63,7 +63,6 @@ body{
     height: 400px;
     display:flex;
     flex-wrap: wrap;
-
 }
 
 .header h2{
@@ -71,7 +70,7 @@ body{
     position: absolute;
     text-align: center;
     font-family: helvetica, sans-serif;
-    font-size: 50px;
+    font-size: 40px;
     color: #1ba1c6;
     background-color: #454748;
     border: 1px;
@@ -81,9 +80,8 @@ body{
     float: right;
     bottom: 10px;
     right: 50px;
-    
 }
-
+/* Section for about me, including Image of your's truly */
 .about-grid {
     display:flex;
     flex-wrap: wrap;
@@ -92,9 +90,6 @@ body{
     background-color: #454748;
     border: 5px #1ba1c6;
     justify-content: space-between;
-   
-    
-    
 }
 
 .about-me {
@@ -112,6 +107,7 @@ body{
     object-fit:cover;
     text-align: right;
     }
+
 .about-me h2 {
     background-color:#1ba1c6;
     color: #454748;
@@ -120,16 +116,7 @@ body{
     width:120px;
     position:relative;
 }
-/*
-.vl {
-    border-left:6px solid #1ba1c6;
-    height:400px;
-    position:absolute;
-    left:35%;
-    margin-left: -3px;
-    top:525px;
-    display:flex;
-} */
+
 .content  {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 30px;
@@ -140,9 +127,8 @@ body{
     width:50%;
     overflow: wrap;
     border: 2px #1ba1c6;
-    
 }
-
+/* Main Content featuring Photo's of previous work */
 .main {
     display:flex;
     flex-wrap:wrap;
@@ -186,7 +172,6 @@ body{
      
 }
 
-
 .portfolio-grid-item {
     flex-grow:0;
     border: 5px solid #1ba1c6;
@@ -195,14 +180,11 @@ body{
     gap:10px 10px;
     position:relative;
     
-   
-    
 }
 .hero-item {
     width:100%;
     object-fit:cover;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap; 
 }
 
 .portfolio-grid-item h3 {
@@ -219,9 +201,7 @@ body{
     margin: 0;
     float: right;
     bottom: 50px;
-    right: 10px;
-    
-    
+    right: 10px; 
 }
 
 
@@ -231,20 +211,17 @@ body{
     object-fit: cover; 
     width:100%;
     height:100%; 
-    
 } 
 
 .blur img{
     transition: 1s ease;
     }
-    
     .blur img:hover {
     -webkit-filter: blur(5px);
     transition: 1s ease;
     }
-
+/* Footer Section of CSS */
 .footer {
-
     height: 100px;
     width: 100%;
     background-color: #454748;
@@ -256,7 +233,6 @@ body{
 }
 
 .footer h2 {
-
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color:#1ba1c6;
     color: #454748;
@@ -268,7 +244,6 @@ body{
    
 }
 .footer li {
-   
     flex-wrap: wrap;
     display:inline-flex;
     font-family: verdana, sans-serif;
@@ -279,7 +254,7 @@ body{
     
 }
 
-
+/* This media screen is set for smaller screens such as tablets etc */
 @media screen and (max-width: 1450px){
     .header{
         background-image: url("images/Fall.jpg");
@@ -291,6 +266,9 @@ body{
         background-position-y: -1000px;
         
         } 
+        .header h2 {
+          font-size: 30px;
+        }
         .navbar, .nav,
          .portfolio-grid, .portfolio-grid-item, .sidebar, .footer {
         flex-direction: column;
@@ -339,6 +317,7 @@ body{
       font-size:15px ;
     }
     }
+    /* These are all of the values set for about the size of an iphone */
 @media screen and (max-width: 414px) {
     .header {
         background-image: url("images/PurpleBackground.jpg");
@@ -355,7 +334,7 @@ body{
       text-align: center;
       font-size:20px;
     }
-     .navbar, .nav, 
+    .navbar, .nav, 
     .main .portfolio-grid, .portfolio-grid-item, .sidebar, .footer {
     flex-direction: column;
     padding: 2px 2px;
@@ -379,10 +358,7 @@ body{
     text-align: center;
     
   }
-  .sidebar h2{
-    justify-content: center;
-    
-  }
+  
   p{
     font-size:20px;
     justify-content: center;
