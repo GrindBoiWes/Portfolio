@@ -327,7 +327,7 @@ body{
       }
     .footer h2 {
         text-align: center;
-        width:500px;
+        width:450px;
     }
     .footer li {
       font-size:15px ;
@@ -345,6 +345,7 @@ body{
         
     }
     .header h2{
+      justify-content: center;
       text-align: center;
       font-size:20px;
     }
@@ -366,7 +367,6 @@ body{
     align-items: center;
   }
   .about-grid {
-    width:390px;
     text-align:center;
   }
   .about-me h2{
@@ -379,7 +379,6 @@ body{
     
   }
   p{
-    width:100%;
     font-size:20px;
     justify-content: center;
     
@@ -405,7 +404,7 @@ body{
  
   .footer h2 {
     text-align: center;
-    width:280px;
+    width:auto;
  }
  .footer li {
   font-size: 15px;
