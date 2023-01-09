@@ -24,9 +24,9 @@ At the bottom, you will see all of my contact info, as well as another link into
 
 # Links
  
-Github - https://github.com/GrindBoiWes/Portfolio
+Github - https://github.com/GrindBoiWes/WorldOfWes
 
-Website - https://grindboiwes.github.io/Portfolio/
+Website - https://grindboiwes.github.io/WorldOfWes/
 
 
 
