@@ -19,13 +19,14 @@ At the bottom, you will see all of my contact info, as well as another link into
 
 # Screenshot
 
-
+<img src="./assets/images/Portfolio-Full.png">
+<img src="./assets/images/Portfolio-Phone.png">
 
 # Links
  
 Github - https://github.com/GrindBoiWes/Portfolio
 
-Website - 
+Website - https://grindboiwes.github.io/Portfolio/
 
 
 
